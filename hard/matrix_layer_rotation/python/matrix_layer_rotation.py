@@ -39,7 +39,8 @@ def matrixRotation(matrix, r):
         for ((orig_x, orig_y), (rotated_x, rotated_y)) in zip(orig_coord, rotated_coord):
             res[orig_x][orig_y] = matrix[rotated_x][rotated_y]
 
-    print(res)
+    for row in res:
+        print(*row)
 
 
 if __name__ == '__main__':
